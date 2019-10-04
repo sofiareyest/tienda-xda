@@ -1,0 +1,89 @@
+.sectionInfo {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    background: $white;
+    text-align: left;
+    &__container {
+        max-width: 80%;
+        height: auto;
+        overflow: hidden;
+        margin: 0 auto;
+    }
+}
+
+h1 {
+    font-family: $standard;
+    font-weight: $bold;
+    font-size: $xxx-large;
+    margin: 35px 0 25px 0;
+    padding: 0;
+    text-align: left;
+    @include tablet-view {
+        font-size: 25px;
+    }
+    @include laptop-view {
+        font-size: 25px;
+    }
+}
+
+p {
+    font-family: $raleway;
+    font-weight: $regular;
+    font-size: $medium;
+    color: $quick-silver;
+    margin: 0 0 15px 0px;
+    padding: 0;
+    text-align: left;
+    font-weight: $regular;
+    line-height: 160%;
+    max-width: 70%;
+}
+
+.footerNewsletter {
+    background: $smoky-black;
+    width: 100%;
+    height: auto;
+    display: flex;
+    &__form {
+        width: 90%;
+        margin: 0;
+        padding: 0 0 0 40px;
+        h2 {
+            margin: 0;
+            padding: 0;
+            padding-top: 2rem;
+            color: #ffffff;
+            font-family: $standard;
+            font-size: $xx-large;
+        }
+        label {
+            color: $white;
+            font-size: $small;
+            font-family: $standard;
+        }
+        input {
+            width: 80%;
+            border: none;
+            padding: 9px 20px;
+            margin-bottom: 2rem;
+            margin-bottom: 20px;
+            box-sizing: border-box;
+        }
+    }
+    &__suscribir {
+        width: 10%;
+        background: $white;
+        display: flex;
+        p {
+            -ms-transform: rotate(270deg);
+            -webkit-transform: rotate(270deg);
+            transform: rotate(-270deg);
+            margin: 0;
+            padding: 0;
+            align-self: center;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}

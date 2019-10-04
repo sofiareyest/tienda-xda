@@ -1,0 +1,639 @@
+@import url("https://fonts.googleapis.com/css?family=Old+Standard+TT:400,700|Raleway:400,700&display=swap");
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+h1 {
+  font-family: "Old Standard TT", serif;
+  font-weight: 700;
+  font-size: 50px;
+}
+
+h3 {
+  font-family: "Old Standard TT", serif;
+  font-weight: 700;
+  font-size: 20px;
+  color: #FFF;
+}
+
+p {
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #A6A5A8;
+}
+
+.main {
+  height: 90vh;
+  overflow: hidden;
+}
+
+.header {
+  width: 100%;
+  height: 300px;
+  max-width: 100%;
+  max-height: 100%;
+  background: yellow;
+}
+@media (min-width: 768) {
+  .header {
+    background: green;
+    height: 200px;
+  }
+}
+@media (min-width: 992p) {
+  .header {
+    background: pink;
+    height: 200px;
+  }
+}
+@media (min-width: 1200px) {
+  .header {
+    background: purple;
+    height: 100%;
+  }
+}
+
+.object-fluid {
+  object-fit: cover;
+  object-position: 0 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Container
+==========================================================================
+*/
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+@media only screen and (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+
+  .container-fluid {
+    width: 100vw;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+
+  .container-fluid {
+    width: 100vw;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+
+  .container-fluid {
+    width: 100vw;
+  }
+}
+.row {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+.col {
+  font-family: monospace;
+  font-size: 3rem;
+  color: black;
+}
+
+.order-xs-1 {
+  order: 1;
+}
+
+.order-xs-2 {
+  order: 2;
+}
+
+.order-xs-3 {
+  order: 3;
+}
+
+.order-xs-4 {
+  order: 4;
+}
+
+.order-xs-5 {
+  order: 5;
+}
+
+.order-xs-6 {
+  order: 6;
+}
+
+.order-xs-7 {
+  order: 7;
+}
+
+.order-xs-8 {
+  order: 8;
+}
+
+.order-xs-9 {
+  order: 9;
+}
+
+.order-xs-10 {
+  order: 10;
+}
+
+.order-xs-11 {
+  order: 11;
+}
+
+.order-xs-12 {
+  order: 12;
+}
+
+.col-xs-12 {
+  grid-column: span 12;
+}
+
+.col-xs-12 {
+  grid-column: span 12;
+}
+
+.col-xs-11 {
+  grid-column: span 11;
+}
+
+.col-xs-10 {
+  grid-column: span 10;
+}
+
+.col-xs-9 {
+  grid-column: span 9;
+}
+
+.col-xs-8 {
+  grid-column: span 8;
+}
+
+.col-xs-7 {
+  grid-column: span 7;
+}
+
+.col-xs-6 {
+  grid-column: span 6;
+}
+
+.col-xs-5 {
+  grid-column: span 5;
+}
+
+.col-xs-4 {
+  grid-column: span 4;
+}
+
+.col-xs-3 {
+  grid-column: span 3;
+}
+
+.col-xs-2 {
+  grid-column: span 2;
+}
+
+.col-xs-1 {
+  grid-column: span 1;
+}
+
+@media only screen and (min-width: 768px) {
+  .order-sm-1 {
+    order: 1;
+  }
+
+  .order-sm-2 {
+    order: 2;
+  }
+
+  .order-sm-3 {
+    order: 3;
+  }
+
+  .order-sm-4 {
+    order: 4;
+  }
+
+  .order-sm-5 {
+    order: 5;
+  }
+
+  .order-sm-6 {
+    order: 6;
+  }
+
+  .order-sm-7 {
+    order: 7;
+  }
+
+  .order-sm-8 {
+    order: 8;
+  }
+
+  .order-sm-9 {
+    order: 9;
+  }
+
+  .order-sm-10 {
+    order: 10;
+  }
+
+  .order-sm-11 {
+    order: 11;
+  }
+
+  .order-sm-12 {
+    order: 12;
+  }
+
+  .col-sm-12 {
+    grid-column: span 12;
+  }
+
+  .col-sm-11 {
+    grid-column: span 11;
+  }
+
+  .col-sm-10 {
+    grid-column: span 10;
+  }
+
+  .col-sm-9 {
+    grid-column: span 9;
+  }
+
+  .col-sm-8 {
+    grid-column: span 8;
+  }
+
+  .col-sm-7 {
+    grid-column: span 7;
+  }
+
+  .col-sm-6 {
+    grid-column: span 6;
+  }
+
+  .col-sm-5 {
+    grid-column: span 5;
+  }
+
+  .col-sm-4 {
+    grid-column: span 4;
+  }
+
+  .col-sm-3 {
+    grid-column: span 3;
+  }
+
+  .col-sm-2 {
+    grid-column: span 2;
+  }
+
+  .col-sm-1 {
+    grid-column: span 1;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .col-md-12 {
+    grid-column: span 12;
+  }
+
+  .col-md-11 {
+    grid-column: span 11;
+  }
+
+  .col-md-10 {
+    grid-column: span 10;
+  }
+
+  .col-md-9 {
+    grid-column: span 9;
+  }
+
+  .col-md-8 {
+    grid-column: span 8;
+  }
+
+  .col-md-7 {
+    grid-column: span 7;
+  }
+
+  .col-md-6 {
+    grid-column: span 6;
+  }
+
+  .col-md-5 {
+    grid-column: span 5;
+  }
+
+  .col-md-4 {
+    grid-column: span 4;
+  }
+
+  .col-md-3 {
+    grid-column: span 3;
+  }
+
+  .col-md-2 {
+    grid-column: span 2;
+  }
+
+  .col-md-1 {
+    grid-column: span 1;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .order-lg-1 {
+    order: 1;
+  }
+
+  .order-lg-2 {
+    order: 2;
+  }
+
+  .order-lg-3 {
+    order: 3;
+  }
+
+  .order-lg-4 {
+    order: 4;
+  }
+
+  .order-lg-5 {
+    order: 5;
+  }
+
+  .order-lg-6 {
+    order: 6;
+  }
+
+  .order-lg-7 {
+    order: 7;
+  }
+
+  .order-lg-8 {
+    order: 8;
+  }
+
+  .order-lg-9 {
+    order: 9;
+  }
+
+  .order-lg-10 {
+    order: 10;
+  }
+
+  .order-lg-11 {
+    order: 11;
+  }
+
+  .order-lg-12 {
+    order: 12;
+  }
+
+  .col-lg-12 {
+    grid-column: span 12;
+  }
+
+  .col-lg-11 {
+    grid-column: span 11;
+  }
+
+  .col-lg-10 {
+    grid-column: span 10;
+  }
+
+  .col-lg-9 {
+    grid-column: span 9;
+  }
+
+  .col-lg-8 {
+    grid-column: span 8;
+  }
+
+  .col-lg-7 {
+    grid-column: span 7;
+  }
+
+  .col-lg-6 {
+    grid-column: span 6;
+  }
+
+  .col-lg-5 {
+    grid-column: span 5;
+  }
+
+  .col-lg-4 {
+    grid-column: span 4;
+  }
+
+  .col-lg-3 {
+    grid-column: span 3;
+  }
+
+  .col-lg-2 {
+    grid-column: span 2;
+  }
+
+  .col-lg-1 {
+    grid-column: span 1;
+  }
+}
+.navigation {
+  height: auto;
+  overflow: hidden;
+  width: 100vw;
+  height: 10vh;
+}
+
+.navigation__logo {
+  float: left;
+  margin: 0;
+  padding: 0;
+  height: 10vh;
+  width: 100px;
+}
+
+.navbar__menu {
+  padding: 2rem;
+  padding-right: 5rem;
+  overflow: hidden;
+  float: right;
+}
+.navbar__menu input {
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: -7px;
+  left: -5px;
+  cursor: pointer;
+  opacity: 0;
+  z-index: 2;
+}
+@media (min-width: 1200px) {
+  .navbar__menu input {
+    display: none;
+  }
+}
+@media (min-width: 1200px) {
+  .navbar__menu label {
+    display: none;
+  }
+}
+
+.navigation__item {
+  display: inline-block;
+}
+.navigation__item a {
+  font-family: "Raleway", sans-serif;
+  text-align: left;
+  font-weight: 700;
+  text-decoration: none;
+  padding: 0.5em;
+  margin: 1rem;
+  font-size: 16px;
+  text-decoration: none;
+  color: black;
+}
+.navigation__item a:hover {
+  color: black;
+}
+
+.sectionInfo {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  background: #FFF;
+  text-align: left;
+}
+.sectionInfo__container {
+  max-width: 80%;
+  height: auto;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+h1 {
+  font-family: "Old Standard TT", serif;
+  font-weight: 700;
+  font-size: 50px;
+  margin: 35px 0 25px 0;
+  padding: 0;
+  text-align: left;
+}
+@media (min-width: 768) {
+  h1 {
+    font-size: 25px;
+  }
+}
+@media (min-width: 992p) {
+  h1 {
+    font-size: 25px;
+  }
+}
+
+p {
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #A6A5A8;
+  margin: 0 0 15px 0px;
+  padding: 0;
+  text-align: left;
+  font-weight: 400;
+  line-height: 160%;
+  max-width: 70%;
+}
+
+.footerNewsletter {
+  background: #0C0910;
+  width: 100%;
+  height: auto;
+  display: flex;
+}
+.footerNewsletter__form {
+  width: 90%;
+  margin: 0;
+  padding: 0 0 0 40px;
+}
+.footerNewsletter__form h2 {
+  margin: 0;
+  padding: 0;
+  padding-top: 2rem;
+  color: #ffffff;
+  font-family: "Old Standard TT", serif;
+  font-size: 30px;
+}
+.footerNewsletter__form label {
+  color: #FFF;
+  font-size: 14px;
+  font-family: "Old Standard TT", serif;
+}
+.footerNewsletter__form input {
+  width: 80%;
+  border: none;
+  padding: 9px 20px;
+  margin-bottom: 2rem;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+}
+.footerNewsletter__suscribir {
+  width: 10%;
+  background: #FFF;
+  display: flex;
+}
+.footerNewsletter__suscribir p {
+  -ms-transform: rotate(270deg);
+  -webkit-transform: rotate(270deg);
+  transform: rotate(-270deg);
+  margin: 0;
+  padding: 0;
+  align-self: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn {
+  font-family: "Raleway", sans-serif;
+  color: #0C0910;
+  text-decoration: none;
+  border: 2px solid #A6A5A8;
+  padding: 8px 25px;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.bottominput {
+  background-color: #0C0910;
+  padding-bottom: 0.6rem;
+  margin-left: 4rem;
+}
+
+/*# sourceMappingURL=main.css.map */

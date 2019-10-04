@@ -1,0 +1,59 @@
+.navigation {
+    // background: coral;
+    height: auto;
+    overflow: hidden;
+    width: 100vw;
+    height: 10vh;
+}
+
+.navigation__logo {
+    float: left;
+    margin: 0;
+    padding: 0;
+    height: 10vh;
+    width: 100px;
+}
+
+.navbar__menu {
+    padding: 2rem;
+    padding-right: 5rem;
+    overflow: hidden;
+    float: right;
+    input {
+        display: block;
+        width: 40px;
+        height: 32px;
+        position: absolute;
+        top: -7px;
+        left: -5px;
+        cursor: pointer;
+        opacity: 0;
+        z-index: 2;
+        @include device-large-view {
+            display: none;
+        }
+    }
+    label {
+        @include device-large-view {
+            display: none;
+        }
+    }
+}
+
+.navigation__item {
+    display: inline-block;
+    a {
+        font-family: $raleway;
+        text-align: left;
+        font-weight: $bold;
+        text-decoration: none;
+        padding: .5em;
+        margin: 1rem;
+        font-size: $medium;
+        text-decoration: none;
+        color: black;
+        &:hover {
+            color: black;
+        }
+    }
+}
